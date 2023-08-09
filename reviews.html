@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>WEB222-Final-Reviews</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="info.html">Info</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <h1>Reviews</h1>
+
+    <!-- review -->
+    <div id="review-container"></div>
+
+    <!-- new review adding form -->
+    <h1>Add a Review</h1>
+    <form id="review-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date" required />
+      <label for="rating">Rating</label>
+      <input type="number" id="rating" name="rating" min="1" max="5" required />
+      <label for="review">Review</label>
+      <textarea id="review" name="review" required></textarea>
+      <button type="submit">Create</button>
+    </form>
+
+    <script src="/js/data.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
